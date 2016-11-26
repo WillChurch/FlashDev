@@ -23,8 +23,8 @@
 #define PIN_ERROR_INPUT (10)
 #define PIN_ERROR_OUTPUT   (12)
 
-#define PIN_AS5047D_CS  (16)//analogInputToDigitalPin(PIN_A2))
-#define PIN_AS5047D_PWR	(11) //pull low to power on AS5047D
+//#define PIN_AS5047D_CS  (16)//analogInputToDigitalPin(PIN_A2))
+//#define PIN_AS5047D_PWR	(11) //pull low to power on AS5047D
 
 #define PIN_A4954_IN3		(5)
 #define PIN_A4954_IN4		(6)
@@ -61,12 +61,12 @@ static void boardSetupPins(void)
 	pinMode(PIN_ERROR_INPUT, INPUT_PULLDOWN);
 	pinMode(PIN_ERROR_OUTPUT, OUTPUT);
 
-	pinMode(PIN_AS5047D_CS,OUTPUT);
-	digitalWrite(PIN_AS5047D_CS,LOW); //pull CS LOW by default (chip powered off)
+//	pinMode(PIN_AS5047D_CS,OUTPUT);
+//	digitalWrite(PIN_AS5047D_CS,LOW); //pull CS LOW by default (chip powered off)
 
 	//turn the AS5047D off by default
-	pinMode(PIN_AS5047D_PWR,OUTPUT);
-	digitalWrite(PIN_AS5047D_PWR,HIGH);
+//	pinMode(PIN_AS5047D_PWR,OUTPUT);
+//	digitalWrite(PIN_AS5047D_PWR,HIGH);
 
 
 	pinMode(PIN_MOSI,OUTPUT);
